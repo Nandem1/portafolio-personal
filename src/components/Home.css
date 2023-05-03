@@ -1,9 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
 a:link, a:visited {
     text-decoration: none;
 }
 
 .maininfo {
-    min-height: 75vh;
+    min-height: 100vh;
 }
 
 .stack-img {
@@ -19,19 +26,18 @@ a:link, a:visited {
     object-position: top;
 }
 
-.card-custom {
-    width: 90%;
-}
-
 .main {
-    background-image: url("../assets/wallpaper.jpg");
+    background-image: url("../assets/moon3.jpg");
     background-size: cover;
+    min-height: 100vh;
 }
 
-#boton-arriba {
-    position: sticky;
-    bottom: 20px;
-    left: 20px;
+.alien {
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
 }
 
 @media (max-width: 1200px) {
