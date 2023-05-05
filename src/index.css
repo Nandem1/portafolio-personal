@@ -1,3 +1,13 @@
 body {
     background-color: wheat;
 }
+
+.App {
+    background-image: url("../src/assets/moon3.jpg");
+    background-size: cover;
+    min-height: 100vh;
+}
+
+h1 {
+    color: white;
+}

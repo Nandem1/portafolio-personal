@@ -1,14 +1,18 @@
-import { React, useState, useEffect } from 'react'
+import { React } from 'react'
 import { Row, Col, Container, Image } from 'react-bootstrap'
-import '../components/Home.css'
-import { FaLinkedin, FaGithub, FaChrome, FaArrowUp } from "react-icons/fa";
-import profilereal from '../assets/profilereal.jpg'
+import './Home.css'
+import { FaLinkedin, FaGithub } from "react-icons/fa";
+import { motion } from 'framer-motion';
 
 function Body() {
     return (
-        <>
+        <motion.div
+            initial={{opacity: 0}}
+            animate={{opacity: 1}}
+            exit={{opacity: 0}}
+        >
             <Container fluid className='text-white main'>
-                <Container fluid className='vh-75'>
+                <Container fluid className=''>
                     <Row xs={1} sm={1} md={2} className='maininfo'>
                         <Col order={{ md: 2 }}>
                             <div className='d-flex justify-content-center align-items-center h-75 head-box'>
@@ -29,7 +33,7 @@ function Body() {
                     </div>
                 </Container>
             </Container>
-        </>
+        </motion.div>
     )
 }
 

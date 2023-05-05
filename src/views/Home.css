@@ -10,7 +10,7 @@ a:link, a:visited {
 }
 
 .maininfo {
-    min-height: 100vh;
+    min-height: 80vh;
 }
 
 .stack-img {
@@ -24,12 +24,6 @@ a:link, a:visited {
     border-radius: 100%;
     object-fit: cover;
     object-position: top;
-}
-
-.main {
-    background-image: url("../assets/moon3.jpg");
-    background-size: cover;
-    min-height: 100vh;
 }
 
 .alien {
