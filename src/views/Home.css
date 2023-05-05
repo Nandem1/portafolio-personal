@@ -34,6 +34,10 @@ a:link, a:visited {
     width: 100%;
 }
 
+.main-box {
+    width: 90% !important;
+}
+
 @media (max-width: 1200px) {
     .profile {
         width: 600px;

@@ -1,7 +1,7 @@
 import React from 'react'
 import { motion } from 'framer-motion';
 import ProgressBar from 'react-bootstrap/ProgressBar';
-import { Row, Col, Container, Image } from 'react-bootstrap'
+import { Row, Col, Container } from 'react-bootstrap'
 import { FaHtml5, FaCss3, FaReact, FaBootstrap, FaGitSquare } from "react-icons/fa";
 import { SiJavascript, SiPostgresql } from "react-icons/si";
 

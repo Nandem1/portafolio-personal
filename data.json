@@ -1,7 +1,42 @@
 [
   {
-    "name": "hola",
-    "description": "descripcion",
-    "src": "./assets/desafio-4-mammamia.png"
+    "name": "Desafio LATAM - React II - Mamma Mia",
+    "desc": "Examen final del Modulo React II de la Academia Desafio LATAM, se utiliza HTML5, CSS3, Bootstrap, Reactjs y herramientas como useState, useEffect, useContext y React Router, se confecciona un ecommerce con un carrito funcional.",
+    "src": "src/assets/desafio-4-mammamia.png"
+  },
+  {
+    "name": "Desafio LATAM - React II - RO API",
+    "desc": "Desafio 3 del Modulo React II de la Academia Desafio LATAM, se utiliza HTML5, CSS3, Bootstrap, Reactjs y herramientas como useState, useEffect, useContext y React Router, se confecciona una 'Wiki' del juego Ragnarok Online.",
+    "src": "src/assets/desafio-3-roapi.png"
+  },
+  {
+    "name": "Desafio LATAM - React I - RE API",
+    "desc": "Examen final del Modulo React I de la academia Desafio LATAM, se utiliza HTML5, CSS3, Bootstrap, Reactjs y herramientas como useState, useEffectt, se confecciona una 'wiki' del juego Resident Evil.",
+    "src": "src/assets/reapi.png"
+  },
+  {
+    "name": "Digital House - Front End I - Examen Final",
+    "desc": "Examen final del Modulo Front End I de la academia Digital House, se utiliza HTML5 y CSS3, se confecciona una landing page de Sportit.",
+    "src": "src/assets/fe1dh.png"
+  },
+  {
+    "name": "Desafio LATAM - Javascript para la Web - Conversor de Monedas",
+    "desc": "Examen final del Modulo Javascript para la Web de la academia Desafio LATAM, se utiliza HTML5, CSS3, Bootstrap y Javascript, se confecciona un conversor de monedas consumiendo la API.",
+    "src": "src/assets/conversorjs.png"
+  },
+  {
+    "name": "Desafio LATAM - React I - Galeria en React",
+    "desc": "Desafio 1 del Modulo React I de la academia Desafio LATAM, se utiliza HTML5, CSS3, Bootstrap y Reactjs, se confecciona una galeria de fotos en React.",
+    "src": "src/assets/galeriareact1.png"
+  },
+  {
+    "name": "Desafio LATAM - CSS Avanzado - Grid Ecommerce RE",
+    "desc": "Desafio de Grid del Modulo CSS Avanzado de la academia Desafio LATAM, se utiliza HTML5 y CSS3, se confecciona el diseño de un ecommerce utilizando Grid y Flexbox.",
+    "src": "src/assets/desafiogrid.png"
+  },
+  {
+    "name": "Desafio LATAM - Introduccion al Desarrollo Web - Primer Portafolio",
+    "desc": "Examen final del Modulo Introduccion al Desarrollo Web de la academia Desafio LATAM, se utiliza HTML5, CSS3 y Bootstrap, se confecciona la primera version de Portafolio.",
+    "src": "src/assets/desafio7introweb.png"
   }
 ]

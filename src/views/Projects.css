@@ -1,0 +1,24 @@
+.main-projects {
+  width: 90%;
+}
+
+.cards-projects {
+  width: 99%;
+  height: auto;
+}
+
+.cards-img:hover {
+  transform: scale(1.1);
+  transition: 0.2s;
+}
+
+.cards-img {
+  transform: scale(1.0);
+  transition: 0.2s;
+}
+
+@media (max-width: 750px) {
+  .cards-projects {
+    width: 99%;
+  }
+}

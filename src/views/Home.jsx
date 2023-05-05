@@ -11,12 +11,12 @@ function Body() {
             animate={{opacity: 1}}
             exit={{opacity: 0}}
         >
-            <Container fluid className='text-white main'>
-                <Container fluid className=''>
+            <Container fluid className='text-white main mt-4'>
+                <Container fluid className='main-box'>
                     <Row xs={1} sm={1} md={2} className='maininfo'>
                         <Col order={{ md: 2 }}>
                             <div className='d-flex justify-content-center align-items-center h-75 head-box'>
-                                <div className='head-box ms-4 bg-black bg-opacity-50 rounded-4'>
+                                <div className='head-box bg-black bg-opacity-50 rounded-4'>
                                     <h1 className='mb-1'>¡Hola!, Bienvenidos a mi Portafolio</h1>
                                     <p className='fs-4'>Web Developer Trainee</p>
                                     <p className='mt-4 fs-4'>Mi nombre es Vicente Aguirre, tengo 24 años, soy estudiante de la carrera Fullstack Javascript en la academia Desafío LATAM, día a día me doy cuenta que el código me hace muy feliz.</p>

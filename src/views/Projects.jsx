@@ -1,8 +1,9 @@
-import { React, useContext} from 'react'
+import { React, useContext } from 'react'
 import { motion } from 'framer-motion';
-import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import MyContext from '../MyContext';
+import { Row, Col, Container } from 'react-bootstrap'
+import './Projects.css'
 
 function Projects() {
   const { data } = useContext(MyContext)
@@ -13,18 +14,29 @@ function Projects() {
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
     >
-      <h1 className='mt-5 text-center'>Projects</h1>
+      <h1 className='mt-5 text-center'>Proyectos</h1>
 
-      <Card bg="black" text="light" style={{ width: '18rem' }}>
-        <Card.Img variant="top" src="" />
-        <Card.Body>
-          <Card.Title>{data[0].name}</Card.Title>
-          <Card.Text>
-            {data[0].description}
-          </Card.Text>
-          <Button variant="outline-light">Go somewhere</Button>
-        </Card.Body>
-      </Card>
+      <Container fluid className='mt-5 main-projects'>
+        <Row lg={4} md={2} xs={1} sm={2}>
+          {data.map(item => {
+            return (
+              <Col key={item.name}>
+                <Card className='cards-projects m-auto my-3' bg="black" text="light">
+                  <div className='overflow-hidden'>
+                    <Card.Img className='cards-img img-fluid' variant="top" src={item.src} />
+                  </div>
+                  <Card.Body>
+                    <Card.Title>{item.name}</Card.Title>
+                    <Card.Text>{item.desc}</Card.Text>
+                    <a className="btn btn-outline-light">Github</a>
+                    <a className="btn btn-outline-light ms-2">Web</a>
+                  </Card.Body>
+                </Card>
+              </Col>
+            )
+          })}
+        </Row>
+      </Container>
 
     </motion.div>
   )
