@@ -16,7 +16,7 @@ function Header() {
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="ms-auto">
-          <Nav.Link><NavLink className={setActiveClass} to="/home">Sobre mi</NavLink></Nav.Link>
+          <Nav.Link><NavLink className={setActiveClass} to="/portafolio-personal/">Sobre mi</NavLink></Nav.Link>
           <Nav.Link><NavLink className={setActiveClass} to="/skills">Habilidades</NavLink></Nav.Link>
           <Nav.Link><NavLink className={setActiveClass} to="/projects">Proyectos</NavLink></Nav.Link>
           <Nav.Link><NavLink className={setActiveClass} to="/contact">Contacto</NavLink></Nav.Link>
