@@ -12,7 +12,7 @@ function App() {
   // Funcion para hacer el llamado y almacenado de la data en el estado
   const getData = async () => {
     try {
-      const req = await fetch("../../data.json")
+      const req = await fetch("https://raw.githubusercontent.com/Nandem1/portafolio-personal/main/data.json")
       const res = await req.json()
       setData(res)
     } catch (error) {
@@ -23,7 +23,7 @@ function App() {
   useEffect(() => {
     getData()
   }, [])
-
+  // Funcion onSubmit para el formulario de Contact.jsx, cuenta con validacion y consumo de la API web3forms
   const onSubmit = async (event) => {
     const form = event.currentTarget;
     if (form.checkValidity() === false) {
@@ -53,7 +53,7 @@ function App() {
       }
     }
   }
-  // Comparto la data en un Contexto y asi poder utilizarlo en los demas componentes
+  // Comparto la data, la funcion onSubmit, result y validated en un Contexto y asi poder utilizarlo en los demas componentes
   const globalContext = { data, onSubmit, result, validated }
 
   return (
