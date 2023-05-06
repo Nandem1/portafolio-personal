@@ -1,12 +1,18 @@
 import { React, useState, useEffect } from "react"
 import Navbar from "./components/Navbar"
-import { BrowserRouter } from "react-router-dom"
-import AnimatedRoutes from "./components/AnimatedRoutes"
+import { BrowserRouter, Routes, Route } from "react-router-dom"
 import MyContext from "./MyContext"
+import Home from "./views/Home"
+import Skills from "./views/Skills"
+import Projects from "./views/Projects"
+import Contact from "./views/Contact"
+import Alien from "./components/Alien"
+import "./index.css"
 
 function App() {
   // Estados para almacenar la data que se obtiene de la funcion getData
   const [data, setData] = useState([])
+  // Estados del formulario
   const [result, setResult] = useState("");
   const [validated, setValidated] = useState(false);
   // Funcion para hacer el llamado y almacenado de la data en el estado
@@ -61,8 +67,13 @@ function App() {
       <MyContext.Provider value={globalContext}>
         <BrowserRouter>
           <Navbar />
-          {/* Los routes se encuentran en /components/AnimatedRoutes.jsx */}
-          <AnimatedRoutes />
+          <Alien />
+          <Routes>
+            <Route path="/portafolio-personal/" element={<Home />} />
+            <Route path="/skills" element={<Skills />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/contact" element={<Contact />} />
+          </Routes>
         </BrowserRouter>
       </MyContext.Provider>
     </div>
