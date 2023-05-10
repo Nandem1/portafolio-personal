@@ -24,8 +24,8 @@ function Projects() {
                   <Card.Body>
                     <Card.Title>{item.name}</Card.Title>
                     <Card.Text>{item.desc}</Card.Text>
-                    <a className="btn btn-outline-light">Github</a>
-                    <a className="btn btn-outline-light ms-2">Web</a>
+                    <a className="btn btn-outline-light" href={item.repo}>Github</a>
+                    <a className="btn btn-outline-light ms-2" href={item.web}>Web</a>
                   </Card.Body>
                 </Card>
               </Col>
